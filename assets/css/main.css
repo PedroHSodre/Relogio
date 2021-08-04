@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    padding-top: 50px;
+}
+
+header h1 {
+    color: rgba(12, 166, 197, 0.769);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1em rgba(13, 158, 187, 0.769);
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 1em rgba(12, 166, 197, 0.769);
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/pngegg.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.clock .ponteiro {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+}
+
+.clock .horas::before {
+    content: '';
+    display: block;
+    background-color: #59d3e1;
+    height: 11px;
+    width: 140px;
+    margin-left: 60px;
+    margin-top: -5.5px;
+    border-radius: 11px;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.clock .minutos::before {  
+    content: '';
+    display: block;
+    background-color: #5f8bac;
+    height: 9px;
+    width: 160px;
+    margin-left: 40px;
+    margin-top: -4.5px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 8px #225378;
+}
+
+.clock .segundos::before {
+    content: '';
+    display: block;
+    background-color: #ACF0F2;
+    height: 6px;
+    width: 180px;
+    margin-left: 20px;
+    margin-top: -3px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 15px #333;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 100;
+    background: #848484;
+    border-radius: 50px;
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    border-radius: 6px 6px 0 0;
+    z-index: 54;
+    background: rgb(128, 128, 128);
+}
+
+.sg {
+    width: 300px;
+}
+
+.sg::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+    z-index: 53;
+    background: rgb(78, 78, 78);
+}
+
+.decorador {
+    position: absolute;
+    background: #2e2e2e;
+    border-radius: 200px;
+    box-shadow: 1px 1px 20px #333;
+    padding: 10px;
+}
+
+.relogio-digital {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px rgb(28, 137, 201);
+}
+
+.relogio-digital p {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(39, 185, 214, 0.919);
+}
